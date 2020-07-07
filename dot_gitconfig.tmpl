@@ -1,0 +1,26 @@
+[alias]
+	ci = commit
+	co = checkout
+	backone = reset --hard HEAD~1
+	st = status
+	br = branch
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+	wipe = reset --hard HEAD
+	amend = commit --amend
+	spop = stash pop
+[branch]
+	autosetuprebase = always
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = vim
+[user]
+        name = {{ .git.name }}
+        email = {{ .git.email }}
+[push]
+	default = current
+[pull]
+	default = current
+[color]
+  diff = auto
