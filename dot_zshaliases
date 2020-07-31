@@ -1,0 +1,9 @@
+# See proxy folder
+alias kdevfss='kubectl --context=dev-fss'
+alias kprodfss='kubectl --context=prod-fss'
+alias kdevsbs='kubectl --context=dev-sbs'
+alias kprodsbs='kubectl --context=prod-sbs'
+alias kdevgcp='kubectl --context=dev-gcp'
+alias kprodgcp='kubectl --context=prod-gcp'
+alias k='kubectl'
+alias with_proxy='https_proxy=socks5://localhost:14122 http_proxy=socks5://localhost:14122 no_proxy=".microsoftonline.com"'
