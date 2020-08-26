@@ -12,10 +12,10 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'ryanoasis/vim-devicons'
 Plug 'morhetz/gruvbox'
 
 Plug 'HerringtonDarkholme/yats.vim'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
@@ -133,6 +133,4 @@ xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
-
-
-
+set guifont=FiraCode Nerd Font Mono:style=Retina,Regular
