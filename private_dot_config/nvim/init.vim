@@ -133,4 +133,3 @@ xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
-set guifont=FiraCode Nerd Font Mono:style=Retina,Regular
