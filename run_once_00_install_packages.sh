@@ -39,9 +39,9 @@ _installMany() {
   yay -S --noconfirm "${toInstall[@]}"
 }
 
-packages=("direnv" "emacs" "exa" "ripgrep" "starship" "tmux" "vim" "neovim" "xclip" "zsh" "zsh-autosuggestions" "zsh-completions" "zsh-fast-syntax-highlighting" "go" "fish" "fisher" "sxhkd" "bspwm" "autojump" "thefuck" "wmname")
+packages=("direnv" "emacs" "exa" "ripgrep" "starship" "tmux" "vim" "neovim" "xclip" "zsh" "zsh-autosuggestions" "zsh-completions" "zsh-fast-syntax-highlighting" "go" "fish" "fisher" "sxhkd" "bspwm" "autojump" "thefuck" "wmname" "rbenv" "ruby-build")
 if [[ "$XDG_CURRENT_DESKTOP" != '' ]]; then
-  packages+=("ffmpeg" "libva" "libva-utils" "libva-intel-driver" "alacritty-ligatures" "adobe-source-code-pro-fonts" "papirus-icon-theme" "visual-studio-code-bin" "spotify" "mpv" "faenza-icon-theme");
+  packages+=("ffmpeg" "libva" "libva-utils" "libva-intel-driver" "alacritty-ligatures" "adobe-source-code-pro-fonts" "papirus-icon-theme" "visual-studio-code-bin" "mpv" "faenza-icon-theme" "jetbrains-toolbox");
 fi
 
 _installMany "${packages[@]}"
