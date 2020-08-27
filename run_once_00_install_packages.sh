@@ -41,7 +41,7 @@ _installMany() {
 
 packages=("direnv" "emacs" "exa" "ripgrep" "starship" "tmux" "vim" "neovim" "xclip" "zsh" "zsh-autosuggestions" "zsh-completions" "zsh-fast-syntax-highlighting" "go" "fish" "fisher" "sxhkd" "bspwm" "autojump" "thefuck" "wmname")
 if [[ "$XDG_CURRENT_DESKTOP" != '' ]]; then
-  packages+=("ffmpeg" "libva" "libva-utils" "libva-intel-driver" "alacritty-ligatures" "adobe-source-code-pro-fonts" "papirus-icon-theme" "visual-studio-code-bin" "spotify" "mpv" "faenza-icon-theme" "faience-themes");
+  packages+=("ffmpeg" "libva" "libva-utils" "libva-intel-driver" "alacritty-ligatures" "adobe-source-code-pro-fonts" "papirus-icon-theme" "visual-studio-code-bin" "spotify" "mpv" "faenza-icon-theme");
 fi
 
 _installMany "${packages[@]}"
