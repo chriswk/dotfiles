@@ -1,8 +1,7 @@
 #!/bin/bash -e
 
-PACKAGEINSTALLED=$(yay -Qqe | rg nerd-fonts-complete)
-if [[ $PACKAGEINSTALLED ]]; then
+if yay -Qs nerd-fonts-complete > /dev/null; then
   echo "Nerd fonts already installed"
 else
-  yay -S --noconfirm nerd-fonts-complete
+  yay -S nerd-fonts-complete
 fi
