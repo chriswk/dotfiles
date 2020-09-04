@@ -16,7 +16,7 @@ Plug 'morhetz/gruvbox'
 
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'ryanoasis/vim-devicons'
-
+Plug 'pacha/vem-tabline'
 call plug#end()
 
 inoremap jk <ESC>
