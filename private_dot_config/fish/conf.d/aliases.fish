@@ -1,5 +1,6 @@
 abbr -a yr 'cal -y'
 abbr -a c cargo
+abbr -a k kubectl
 abbr -a e nvim
 abbr -a m make
 abbr -a o xdg-open
