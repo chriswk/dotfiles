@@ -105,16 +105,16 @@
 # Font configuration
 font:
   normal:
-    family: FiraMono Nerd Font
+    family: FiraCode Nerd Font
     style: Regular
   bold:
-    family: FiraMono Nerd Font
+    family: FiraCode Nerd Font
     style: Bold
   italic:
-    family: FiraMono Nerd Font
+    family: FiraCode Nerd Font
     style: Italic
   bold_italic:
-    family: Fira Mono Nerd Font
+    family: FiraCode Nerd Font
     style: Bold Italic
 #font:
   # Normal (roman) font face
