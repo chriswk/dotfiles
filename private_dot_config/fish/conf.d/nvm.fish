@@ -13,3 +13,4 @@ function _nvm_uninstall -e nvm_uninstall
 
     functions -e (functions -a | command awk '/^_nvm_/')
 end
+set -U npm_config_prefix=~/.node_modules
