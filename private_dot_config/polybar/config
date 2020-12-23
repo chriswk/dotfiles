@@ -175,7 +175,7 @@ label-urgent-padding = 1
 [module/date]
 
 type = custom/script
-exec =  /home/gzr/.config/polybar/scripts/date.sh
+exec =  /home/chriswk/.config/polybar/scripts/date.sh
 poll-interval = 50
 ;tail = true
 label-background =   #1f2430
@@ -187,7 +187,7 @@ click-left = gsimplecal
 type = custom/script
 exec = echo "󰐥 "
 format-foreground =  #bf4040
-click-left = bash /home/gzr/.config/polybar/scripts/powermenu.sh &
+click-left = bash /home/chriswk/.config/polybar/scripts/powermenu.sh &
 format-background =#141720  
 
 
