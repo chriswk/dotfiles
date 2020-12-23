@@ -174,23 +174,23 @@ bindsym $mod+F5 scratchpad show
 
 ################### set shut down, restart and locking features ###################
 
-#bindsym $mod+0 mode "$mode_system"
-#set $mode_system  (e)xit, (r)eboot, (Shift+s)hutdown
-#mode "$mode_system" {
-#   bindsym e exec --no-startup-id i3exit logout, mode "default"
-#    bindsym r exec --no-startup-id i3exit reboot, mode "default"
-#    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
-#    bindsym Return mode "default"
-#    bindsym Escape mode "default"
-#}
+bindsym $mod+0 mode "$mode_system"
+set $mode_system  (e)xit, (r)eboot, (Shift+s)hutdown
+mode "$mode_system" {
+   bindsym e exec --no-startup-id i3exit logout, mode "default"
+    bindsym r exec --no-startup-id i3exit reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
 
 
 ################### screenshot ###################
 
 # Screenshot of entire desktop
-bindsym $mod+F4       exec --no-startup-id scrot -e 'feh $f -x' -d 2 & notify-send -i /home/darkhorze/.icons/Reversal-grey/apps/scalable/digikam.svg " Screenshot "      
+bindsym $mod+F4       exec --no-startup-id scrot -e 'feh $f -x' -d 2 & notify-send -i /home/chriswk/.icons/Reversal-grey/apps/scalable/digikam.svg " Screenshot "      
 # Screenshot of focused window
-bindsym $mod+Shift+F4 exec --no-startup-id scrot -u -e 'feh $f -x' & notify-send -i /home/darkhorze/.icons/Reversal-grey/apps/scalable/digikam.svg " Screenshot "      
+bindsym $mod+Shift+F4 exec --no-startup-id scrot -u -e 'feh $f -x' & notify-send -i /home/chriswk/.icons/Reversal-grey/apps/scalable/digikam.svg " Screenshot "      
 
 ################### assign specific apps to keybindings ###################
 
@@ -253,7 +253,7 @@ exec --no-startup-id dunst
 exec --no-startup-id xfce4-power-manager 
 exec_always --no-startup-id nm-applet 
 #exec_always --no-startup-id blueman-tray &
-#exec_always --no-startup-id pulseaudio &
+exec_always --no-startup-id pulseaudio &
 #exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec_always --no-startup-id autotiling
 exec --no-startup-id volumeicon
@@ -261,16 +261,16 @@ exec --no-startup-id xfce4-clipman
 
 ################## change wallpaper ######################
 
-exec_always --no-startup-id feh --bg-fill /home/gzr/Downloads/beautiful-morning-minimal-4k-if-1920x1080.jpg
+exec_always --no-startup-id feh --bg-fill /home/chriswk/Downloads/beautiful-morning-minimal-4k-if-1920x1080.jpg
 ################# keybindin gs to custom script initialization ###################
 
 ## to start polybar
 
-exec_always --no-startup-id /home/gzr/.config/polybar/launch.sh &
+exec_always --no-startup-id /home/chriswk/.config/polybar/launch.sh &
 
 ############## to start rofi widgets ###############
 
-bindsym $mod+c exec  /home/gzr/.config/polybar/scripts/powermenu.sh &
+bindsym $mod+c exec  /home/chriswk/.config/polybar/scripts/powermenu.sh &
 
 
 
@@ -299,8 +299,8 @@ for_window [class="^feh"] border pixel 0
 
 
 
-bindsym $mod+b	exec --no-startup-id xbacklight -dec 4 && notify-send -i /home/gzr/.icons/Reversal-blue/apps/scalable/gcompris-edit.svg " 󰃝 " "$(light -G)%" &       
-bindsym $mod+g	exec --no-startup-id xbacklight -inc 5 && notify-send -i /home/gzr/.icons/Reversal-blue/apps/scalable/gcompris-edit.svg " 󰃞 " "$(light -G)%" &
+bindsym $mod+b	exec --no-startup-id xbacklight -dec 4 && notify-send -i /home/chriswk/.icons/Reversal-blue/apps/scalable/gcompris-edit.svg " 󰃝 " "$(light -G)%" &       
+bindsym $mod+g	exec --no-startup-id xbacklight -inc 5 && notify-send -i /home/chriswk/.icons/Reversal-blue/apps/scalable/gcompris-edit.svg " 󰃞 " "$(light -G)%" &
 
 
 
