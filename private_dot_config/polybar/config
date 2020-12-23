@@ -182,13 +182,13 @@ label-background =   #1f2430
 label-foreground =  #b3b3b3
 click-left = gsimplecal
 
-[module/mtu]
+#[module/mtu]
 
-type = custom/script
-exec = echo "󰐥 "
-format-foreground =  #bf4040
-click-left = bash /home/chriswk/.config/polybar/scripts/powermenu.sh &
-format-background =#141720  
+#type = custom/script
+#exec = echo "󰐥 "
+#format-foreground =  #bf4040
+#click-left = bash /home/chriswk/.config/polybar/scripts/powermenu.sh &
+#format-background =#141720  
 
 
 [module/volume]
