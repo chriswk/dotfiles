@@ -40,7 +40,7 @@ transparency = 0
 icon_position = left
 min_icon_size = 0
 max_icon_size = 80
-icon_path = /usr/share/icons/Papirus-Light/48x48/actions:/home/gzr/.icons/Reversal-blue/apps/scalable/:/usr/share/icons/Papirus-Light/48x48/devices:/usr/share/icons/Papirus-Light/48x48/emblems:/usr/share/icons/Papirus-Light/48x48/emotes:/usr/share/icons/Papirus-Light/48x48/mimetypes:/usr/share/icons/Papirus-Light/48x48/places:/usr/share/icons/Papirus-Light/48x48/status
+icon_path = /usr/share/icons/Papirus-Light/48x48/actions:/home/chriswk/.icons/Reversal-blue/apps/scalable/:/usr/share/icons/Papirus-Light/48x48/devices:/usr/share/icons/Papirus-Light/48x48/emblems:/usr/share/icons/Papirus-Light/48x48/emotes:/usr/share/icons/Papirus-Light/48x48/mimetypes:/usr/share/icons/Papirus-Light/48x48/places:/usr/share/icons/Papirus-Light/48x48/status
 
 
 browser = /usr/bin/firefox -new-tab
