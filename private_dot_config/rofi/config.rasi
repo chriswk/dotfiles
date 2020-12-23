@@ -203,5 +203,5 @@ textbox-prompt-colon {
 }
 
 
-@import "/home/gzr/.config/rofi/colors.rasi"
+@import "/home/chriswk/.config/rofi/colors.rasi"
 
