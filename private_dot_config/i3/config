@@ -261,7 +261,7 @@ exec --no-startup-id xfce4-clipman
 
 ################## change wallpaper ######################
 
-exec_always --no-startup-id feh --bg-fill /home/chriswk/Downloads/beautiful-morning-minimal-4k-if-1920x1080.jpg
+exec_always --no-startup-id feh --bg-fill /home/chriswk/Downloads/beautiful-morning-minimal-4k-if.jpg
 ################# keybindin gs to custom script initialization ###################
 
 ## to start polybar
