@@ -14,7 +14,7 @@ exec autotiling
 exec --no-startup-id xsettingsd &
 exec setxkbmap -layout us
 exec setxkbmap -option 'grp:alt_shift_toggle'
-font pango:monospace 9
+font Furo Code Medium Nerd Font Complete 9
 # Menu
 bindsym $mod+d exec rofi -lines 12 -padding 18 -width 60 -location 0 -show drun -sidebar-mode -columns
 
