@@ -53,7 +53,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+k move up
 
 # Split horizontal
-bindsym $mod+h split h
+bindsym $mod+Alt+h split h
 
 # Split vertical
 bindsym $mod+v split v
