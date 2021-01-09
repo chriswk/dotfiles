@@ -19,7 +19,7 @@ exec setxkbmap -option 'grp:alt_shift_toggle'
 bindsym $mod+d exec rofi -lines 12 -padding 18 -width 60 -location 0 -show drun -sidebar-mode -columns
 
 # Use Mouse+$mod to drag floating windows
-floating_modified $mod
+floating_modifier $mod
 
 # Start a terminal
 bindsym $mod+Return exec alacritty
