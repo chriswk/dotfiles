@@ -1,0 +1,77 @@
+
+xmonad.hs:10:1: error:
+    Could not find module ‘XMonad.Actions.CycleWS’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+10 | import XMonad.Actions.CycleWS
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:11:1: error:
+    Could not find module ‘XMonad.Layout.NoBorders’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+11 | import XMonad.Layout.NoBorders
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:12:1: error:
+    Could not find module ‘XMonad.Hooks.ManageHelpers’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+12 | import XMonad.Hooks.ManageHelpers
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:13:1: error:
+    Could not find module ‘XMonad.Layout.Fullscreen’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+13 | import qualified XMonad.Layout.Fullscreen as FS
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:14:1: error:
+    Could not find module ‘XMonad.Util.Run’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+14 | import XMonad.Util.Run(spawnPipe)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:15:1: error:
+    Could not find module ‘XMonad.Hooks.DynamicLog’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+15 | import XMonad.Hooks.DynamicLog
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:20:1: error:
+    Could not find module ‘XMonad.Hooks.EwmhDesktops’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+20 | import XMonad.Hooks.EwmhDesktops (ewmh, fullscreenEventHook)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:21:1: error:
+    Could not find module ‘XMonad.Hooks.ManageDocks’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+21 | import XMonad.Hooks.ManageDocks
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:22:1: error:
+    Could not find module ‘XMonad.Config.Desktop’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+22 | import XMonad.Config.Desktop
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:23:1: error:
+    Could not find module ‘XMonad.Util.SpawnOnce’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+23 | import XMonad.Util.SpawnOnce
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:26:1: error:
+    Could not find module ‘XMonad.Config.Prime’
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+26 | import XMonad.Config.Prime (LayoutClass)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
