@@ -1,282 +1,153 @@
 
+IntelliJ IDEA
+[colors]
+background = #222
+background-alt = #444
+foreground = #dfdfdf
+foreground-alt = #888
+primary = #ffb52a
+secondary = #e60053
+alert = #bd2c40
 
+[bar/main]
+monitor = ${env:MONITOR:HDMI-A-0}
+width = 100%
+height = 2.5%
+radius = 6.0
+fixed-center = false
+bottom = true
 
+background = ${colors.background}
+foreground = ${colors.foreground}
 
-; #################### Bar launcher #########################
+border-size = 0
+line-size = 2
+padding = 1
+module-margin = 1
 
-[bar/launcher]
-width = 1.78%
-height = 32px
-offset-x = 1.1%
-offset-y = 13px
-radius = 16.6
-fixed-center = true
-background =   #141720
-padding-left = 0
-padding-right = 0
-module-margin-left = 0
-module-margin-right = 0
-font-0 = Material Design Icons Desktop :pixelsize=15:style:Regular;3
-font-1 = Hack:pixelsize=11:style=Bold;3
-modules-left = launcher
-wm-restack = i3
-override-redirect = true
-cursor-click = pointer
-cursor-scroll = default
-bottom = false
+font-0 = "Noto Sans Mono:size=10;1"
+font-1 = "Noto Sans Mono:size=10;1"
+font-2 = "Noto Sans Symbols:size=10;1"
+font-3 = "Noto Sans Symbols2:size=10;1"
 
+modules-left = date bspwm xwindow
+modules-center =
+modules-right = github eth1 eth2 wlan cpu battery
 
-; ######################## Bar Center ########################
+tray-position = right
+tray-padding = 2
+tray-maxsize = 24
 
-[bar/center]
-width = 19%
-height = 23px
-offset-x = 40.5%
-offset-y = 17px
-radius = 7
-fixed-center = true
-background =  #00000000
-;foreground = #9ae0bd
-padding-left = 2
-padding-right = 0
-module-margin-left = 0
-module-margin-right = 0
-font-0 = Material Design Icons Desktop:pixelsize=17:style:Regular;3
-font-1 = Nasalization :pixelsize=12:style=Regular;2
-;border-size = 2
-;border-color = #dfdfdf
-modules-center = i3 
-wm-restack = i3
-override-redirect = true
-cursor-click = pointer
-cursor-scroll = default
-bottom = false
+wm-restack = bspwm
 
+[global/wm]
+margin-top = 0
 
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:30:...%
 
-
-; ######################## Bar datee ########################
-
-
-[bar/datee]
-width = 14%
-height = 23px
-offset-x = 83%
-offset-y = 17px
-radius = 6
-fixed-center = true
-background = #1f2430
-;foreground = #9ae0bd
-padding-left = 29
-padding-right = 
-module-margin-left = 0
-module-margin-right = 0
-font-0 = Material Design Icons Desktop:pixelsize=12:style:Bold;3
-font-1 = Nasalization :pixelsize=11:style=Regular;2
-;border-size = 0
-;border-color = #bf4040
-modules-left = date
-modules-right = 
-wm-restack = i3
-override-redirect = true
-cursor-click = pointer
-cursor-scroll = default
-bottom = false
-tray-position = left
-tray-detached = true
-tray-maxsize =30
-tray-background =  #1f2430
-tray-offset-x = 1%
-
-; ######################## Bar masked ########################
-
-[bar/masked]
-width = 17%
-height = 30px
-offset-x = 82%
-offset-y = 13px
-radius = 10
-fixed-center = true
-background =  #141720  
-padding-left = 0
-padding-right = 0
-font-0 = Material Design Icons Desktop:pixelsize=17:style:Bold;5
-font-1 = Hack:pixelsize=12:style=Bold;4
-modules-left =  
-modules-right = 
-wm-restack = i3
-override-redirect = true
-cursor-click = pointer
-cursor-scroll = default
-bottom = false
-
-; ######################## Bar quicks ########################
-
-[bar/quicks]
-width = 8%
-height = 24px
-offset-x = 3.2%
-offset-y = 16px
-radius = 7
-fixed-center = true
-background =  #1f2430 
-;foreground = #9ae0bd
-padding-left = 0
-padding-right = 0
-module-margin-left = 1
-module-margin-right = 0
-font-0 = Material Design Icons Desktop:pixelsize=16:style:Regular;3
-font-1 = Hack:pixelsize=11:style=Bold;3
-;border-size = 0
-;border-color = #bf4040
-modules-center = ffox sspot tthu ccam cclip
-wm-restack = i3
-override-redirect = true
-cursor-click = pointer
-cursor-scroll = default
-bottom = false
-
-
-;#################### Modules ####################
-
-[module/i3]
-
-type = internal/i3
-enable-click = true
+[module/bspwm]
+type = internal/bspwm
+pin-workspaces = false
+enable-click = false
 enable-scroll = false
-ws-icon-0 = "1;1󰆍"
-ws-icon-1 = "2;2󰈹"
-ws-icon-2 = "3;3󰉏"
-ws-icon-3 = "4;4󰨞"
-ws-icon-4 = "5;5󰂓"
-ws-icon-5 = "6;6󰚴"
-ws-icon-6 = "7;7󰋌"
-ws-icon-7 = "8;8󰏗"
-ws-icon-8 = "9;9󰦫"
-format = <label-state>
-label-focused = %icon%
-label-focused-foreground = #fdfdfd
-;label-focused-background =  #141720  
-label-focused-padding = 1
 
+label-focused = " %name% "
+label-focused-underline = #fba922
 
-label-unfocused = ${self.label-focused}
-label-unfocused-foreground = #000000
-label-unfocused-padding = 1
+label-occupied = " %name% "
+label-occupied-foreground = #ffaa00
 
-label-visible = ${self.label-focused}
-label-visible-background = #030b11
-label-visible-padding = 1
+label-urgent = " %name% "
+label-urgent-underline = #9b0a20
 
-label-urgent = ${self.label-focused}
-label-urgent-foreground = #ed404c
-label-urgent-padding = 1
+label-empty = " %name% "
+label-empty-foreground = #555555
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = "💻 "
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = #f90000
+label = %percentage:2%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = "🗍 "
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = #4bffdc
+label = %percentage_used:2%%
+
+[module/wlan]
+type = internal/network
+interface = wlp2s0
+interval = 5.0
+
+format-connected = <ramp-signal> <label-connected>
+format-connected-underline = #9f78e1
+label-connected = %essid%
+
+label-disconnected =
+
+ramp-signal-0 = 🌧
+ramp-signal-1 = 🌦
+ramp-signal-2 = 🌥
+ramp-signal-3 = 🌤
+ramp-signal-4 = 🌣
+
+[module/eth2]
+type = internal/network
+interface = enp12s0u1
+interval = 3.0
+
+format-connected-underline = #115511
+format-connected-prefix = "🖧 "
+format-connected-prefix-foreground = ${colors.foreground-alt}
+label-connected = %local_ip%
+
+format-disconnected =
+
+[module/eth1]
+type = internal/network
+interface = enp0s31f6
+interval = 3.0
+
+format-connected-underline = #55aa55
+format-connected-prefix = "🖧 "
+format-connected-prefix-foreground = ${colors.foreground-alt}
+label-connected = %local_ip%
+
+format-disconnected =
 
 [module/date]
-
-type = custom/script
-exec =  /home/chriswk/.config/polybar/scripts/date.sh
-poll-interval = 50
-;tail = true
-label-background =   #1f2430
-label-foreground =  #b3b3b3
-click-left = gsimplecal
-
-#[module/mtu]
-
-#type = custom/script
-#exec = echo "󰐥 "
-#format-foreground =  #bf4040
-#click-left = bash /home/chriswk/.config/polybar/scripts/powermenu.sh &
-#format-background =#141720  
-
-
-[module/volume]
-
-type = internal/alsa
-format = <label>
-label-volume = "󰎆 %{T2}%percentage%%{T-} "
-label-volume-foreground =  #7575a3
-label-muted = "󱄡  "
-label-muted-foreground =  #7575a3
-poll-interval = 10
-sink = alsa_output.pci-0000_00_1f.3.analog-stereo
-use-ui-max = false
+type = internal/date
 interval = 5
 
+date = "%a %d"
+date-alt = %a %b %d
 
-[module/launcher]
+time = %I:%M
+time-alt = %I:%M%p
 
+format-prefix =
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = #0a6cf5
 
-type = custom/text
-content = " 󰻀 "
-content-foreground =  #c6538c
-click-left = rofi -show drun -eh 2 -bw 0  &
-interval = 50
+label = %date% %time%
 
+[module/github]
+type = internal/github
+token = ${file:/home/chriswk/.config/github/notifications.token}
+user = chriswk
+empty-notifications = false
+;label = %{u#ff9900 +u} %notifications% %{u-}
+label = %{u#0099ff +u} 📫 %{u-}
+interval = 10
 
-[module/sep]
-content = " ❯ "
-type = custom/text
-content-foreground = #030b11
-margin = 0
+[settings]
+screenchange-reload = true
 
-
-[module/ccam]
-type = custom/text
-content = "󰄄"
-#content-foreground =  #ffa64d
-click-left =  exec  scrot -e 'feh $f -x' -d 2 &
-interval = 50
-content-foreground =  #b3b3b3
-[module/ffox]
-type = custom/text
-content = "󰈹"
-content-foreground = #bf4040
-
-click-left =  exec firefox &
-interval = 50
-
-
-[module/tthu]
-type = custom/text
-content = "󰉋"
-content-foreground =#7575a3
-
-click-left =  exec thunar &
-interval = 50
-
-
-[module/sspot]
-type = custom/text
-content = "󰓇"
-content-foreground = #00b386
-
-click-left =  exec spotify &
-interval = 50
-
-[module/cclip]
-type = custom/text
-content = "󱓥"
-content-foreground = #008080
-
-click-left =  exec xfce4-clipman-history &
-interval = 50
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+; vim:ft=dosini
