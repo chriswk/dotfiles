@@ -153,7 +153,7 @@ bindsym $mod+r mode "resize"
 bar {
 	position top
 	tray_output primary
-    status_command i3blocks -c /home/chriswk/.config/i3blocks/config
+        status_command i3blocks -c /home/chriswk/.config/i3blocks/config
 	colors {
     	separator 			#2e3440
    		background 			#2e3440
