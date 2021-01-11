@@ -1,68 +1,167 @@
-command=~/.local/bin/statusbar/$BLOCK_NAME
-separator_block_width=15
+#	 _ _____ _     _            _        
+#	(_)___ /| |__ | | ___   ___| | _____ 
+#	| | |_ \| '_ \| |/ _ \ / __| |/ / __|
+#	| |___) | |_) | | (_) | (__|   <\__ \
+#	|_|____/|_.__/|_|\___/ \___|_|\_\___/
+#
 markup=pango
+full_text=
+align=center
+separator=false
+separator_block_width=0
+background=#2e3440
 
-[record]
-command=cat /tmp/recordingicon
-interval=once
-signal=9
+[separator]
+color=#4c566a
+background=#2e3440
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
 
-[music]
-label=🎼
-interval=once
-signal=11
+[mediaplayer]
+command=~/.config/i3blocks/scripts/media.sh
+interval=2
+color=#eceff4
+background=#4c566a
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
 
-[news]
-interval=once
-signal=6
+[separator]
+color=#81a1c1
+background=#4c566a
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
 
-#[iplocate]
-#interval=30
+[vpn]
+command=~/.config/i3blocks/scripts/vpn.sh
+interval=10
+color=#2e3440
+background=#81a1c1
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
 
-[pacpackages]
-interval=once
-signal=8
+[separator]
+color=#88c0d0
+background=#81a1c1
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
 
-[torrent]
-interval=20
-signal=7
+[wifi]
+command=~/.config/i3blocks/scripts/wifi.sh
+interval=10
+color=#2e3440
+background=#88c0d0
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
 
-[weather]
-interval=18000
-signal=5
+############
+[separator]
+color=#2e3440
+background=#88c0d0
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
+############
 
-[mailbox]
-interval=180
-signal=12
-
-#[memory]
-#interval=30
-
-#[cpu]
-#interval=15
+[separator]
+color=#4c566a
+background=#2e3440
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
 
 [volume]
-interval=once
-signal=10
+command=~/.config/i3blocks/scripts/volume.sh
+interval=2
+color=#eceff4
+background=#4c566a
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
 
-#[disk]
-#interval=60
-#command=disk /
-
-#[disk]
-#interval=60
-#command=disk /home
+############
+[separator]
+full_text=" "
+color=#2e3440
+background=#4c566a
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
+############
 
 [battery]
-command=battery BAT0
-interval=5
+command=~/.config/i3blocks/scripts/battery.sh
+interval=120
+color=#eceff4
+background=#4c566a
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
 
-[clock]
-label=📅
-interval=30
+[separator]
+color=#81a1c1
+background=#4c566a
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
 
-[internet]
-interval=10
+[time]
+command=~/.config/i3blocks/scripts/time.sh
+interval=60
+color=#2e3440
+background=#81a1c1
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
 
-[help-icon]
-interval=once
+[separator]
+color=#88c0d0
+background=#81a1c1
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
+
+[date]
+command=~/.config/i3blocks/scripts/date.sh 
+interval=60
+color=#2e3440
+background=#88c0d0
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
+
