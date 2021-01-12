@@ -10,7 +10,7 @@ keysym 1 = 1 exclam U203D
 clear      lock
 clear   control
 keycode      37 = Control_L
-! Caps -> Control_L
+! Caps -> Escape
 keycode      66 = Escape
 ! Control_R stays
 keycode     105 = Multi_key
