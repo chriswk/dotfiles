@@ -26,3 +26,6 @@ keysym l = l L Greek_lamda
 keysym d = d D Greek_DELTA Greek_DELTA
 keysym period = period greater periodcentered
 keysym s = s S radical section
+! Swap caps lock and escape
+remove Lock = Caps_Lock
+keysym Caps_Lock = Escape
