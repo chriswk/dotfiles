@@ -11,7 +11,7 @@ clear      lock
 clear   control
 keycode      37 = Control_L
 ! Caps -> Control_L
-keycode      66 = Control_L
+keycode      66 = Escape
 ! Control_R stays
 keycode     105 = Multi_key
 ! We apparently need to say that these are control keys?
@@ -26,6 +26,3 @@ keysym l = l L Greek_lamda
 keysym d = d D Greek_DELTA Greek_DELTA
 keysym period = period greater periodcentered
 keysym s = s S radical section
-! Swap caps lock and escape
-remove Lock = Caps_Lock
-keysym Caps_Lock = Escape
