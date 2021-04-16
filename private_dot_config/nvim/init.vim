@@ -13,10 +13,12 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'morhetz/gruvbox'
+Plug 'arcticicestudio/nord-vim'
 
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'ryanoasis/vim-devicons'
-Plug 'pacha/vem-tabline'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'romgrk/barbar.nvim'
 call plug#end()
 
 inoremap jk <ESC>
@@ -48,7 +50,7 @@ set shiftwidth=2
 " always uses spaces instead of tab characters
 set expandtab
 
-colorscheme gruvbox
+colorscheme nord
 
 " sync open file with NERDTree
 " " Check if NERDTree is open or active

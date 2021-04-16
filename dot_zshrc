@@ -2,7 +2,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export EDITOR="vi"
 export GOPATH="$HOME/.go"
 ZSH_THEME="amuse"
-plugins=(git kubectl gpg-agent ssh-agent gradle mvn npm stack autojump thefuck)
+plugins=(git archlinux kubectl gpg-agent ssh-agent gradle mvn npm stack autojump thefuck)
 
 source $ZSH/oh-my-zsh.sh
 
