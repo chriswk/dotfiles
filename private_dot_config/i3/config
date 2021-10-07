@@ -174,7 +174,7 @@ client.urgent 			#2f343a #900000 #ffffff #900000
 exec --no-startup-id xss-lock /home/chriswk/.config/i3lock/lock.sh
 exec --no-startup-id nm-applet
 exec_always --no-startup-id picom --backend glx --vsync --config /home/chriswk/.config/picom/picom.conf
-exec_always --no-startup-id i3-msg gaps inner all set 30
-exec_always --no-startup-id i3-msg gaps outer all set 30
+exec_always --no-startup-id i3-msg gaps inner all set 5
+exec_always --no-startup-id i3-msg gaps outer all set 5
 for_window [class=".*"] border pixel 3
 
