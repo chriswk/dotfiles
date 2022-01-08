@@ -6,9 +6,21 @@ plugins=(git archlinux kubectl gpg-agent ssh-agent gradle mvn npm stack autojump
 
 source $ZSH/oh-my-zsh.sh
 
+function select-repo() {
+  local root=~/src # or wherever you put your cloned projects
+  echo -n $root/
+  {
+     cd $root
+     gix t find
+  } | sk -q "$1"
+}
 
+function cd-repo() {
+  cd "$(select-repo $@)"
+}
 
-export PATH=$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH:$HOME/bin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.cargo/bin:$GOPATH/bin:$HOME/.bin
+alias or=cd-repo
+export PATH=$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH:$HOME/bin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.cargo/bin:$GOPATH/bin:$HOME/.bin:$HOME/.pulumi/bin
 
 export PATH=$PATH:/snap/bin
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
