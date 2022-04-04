@@ -1,7 +1,1 @@
-Plugin 'udalov/kotlin-vim'
-Plugin 'elixir-editors/vim-elixir'
-Plugin 'mhinz/vim-mix-format'
-Plugin 'ElmCast/elm-vim'
-Plugin 'nbouscal/vim-stylish-haskell'
-Plugin 'martinda/Jenkinsfile-vim-syntax'
-Plugin 'arcticicestudio/nord-vim'
+Plug 'arcticicestudio/nord-vim'
