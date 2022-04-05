@@ -5,6 +5,7 @@
 	st = status
 	br = branch
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+        datedtags = log --tags --simplify-by-decoration --pretty=format:'%ci %d'
 	type = cat-file -t
 	dump = cat-file -p
 	wipe = reset --hard HEAD
