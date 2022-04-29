@@ -11,7 +11,7 @@ function select-repo() {
   echo -n $root/
   {
      cd $root
-     gix t find
+     ein t find
   } | sk -q "$1"
 }
 
