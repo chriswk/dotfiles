@@ -86,7 +86,7 @@ let g:coc_global_extensions = [
   \ 'coc-python',
   \ 'coc-html',
   \ 'coc-yank',
-  \ 'coc-rls',
+  \ 'coc-rust-analyzer',
   \ ]
 
 set hidden
